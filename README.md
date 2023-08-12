@@ -12,3 +12,5 @@ When combined, "SamriddhiSampada" reflects the idea of creating a repository or 
 This repository contains the following programs:
 
 1. [Hello World](hello-world/README.md)
+2. [arrow-world](arrow-world/README.md)
+   This function uses the arrow function syntax.
