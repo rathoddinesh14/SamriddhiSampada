@@ -85,10 +85,10 @@ const App = () =>(
 
       <p>Search fruits:</p>
 
-      <label htmlFor="search">Search: </label>
+      {/* <label htmlFor="search">Search: </label>
       <input id="search" type="text" />
 
-      <p>Recreating above search using React Component</p>
+      <p>Recreating above search using React Component</p> */}
       <FruitSearch />
 
       <hr />
@@ -128,11 +128,18 @@ const FruitList = () => (
       </ul>
   )
 
-const FruitSearch = () => (
+const FruitSearch = () => {
+
+  const handleChange = (event) => {
+    console.log(event.target.value);
+  }
+
+  return (
     <div>
       <label htmlFor="search">Search: </label>
-      <input id="search" type="text" />
+      <input id="search" type="text" onChange={handleChange} />
     </div>
-  )
+  );
+}
 
 export default App;

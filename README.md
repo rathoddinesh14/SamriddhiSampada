@@ -12,5 +12,6 @@ When combined, "SamriddhiSampada" reflects the idea of creating a repository or 
 This repository contains the following programs:
 
 1. [Hello World](hello-world/README.md)
-2. [arrow-world](arrow-world/README.md)
-   This function uses the arrow function syntax.
+2. [Arrow World](arrow-world/README.md)
+   In this project, react code is written using the arrow function syntax.
+   Event handlers code is also written.
