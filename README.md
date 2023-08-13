@@ -15,4 +15,5 @@ This repository contains the following programs:
 2. [Arrow World](arrow-world/README.md)
    In this project, react code is written using the arrow function syntax.
    Event handlers code is also written. Using props to pass data from parent
-   to child component and not vice-versa.
+   to child component and not vice-versa. Using state(hook) to interactively
+   update the UI/input.
