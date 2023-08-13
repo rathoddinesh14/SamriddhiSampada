@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 
 const numbers = [1, 2, 3, 4, 5];
 
@@ -124,15 +125,30 @@ const FruitList = (props) => (
 
 const FruitSearch = () => {
 
+  // below code does not work
+  // let searchTerm = '';
+
+  // const handleChange = (event) => {
+  //   console.log(event.target.value);
+  //   searchTerm = event.target.value;
+  // }
+
+  // useState is a React Hook
+  const [searchTerm, setSearchTerm] = React.useState('');
+
   const handleChange = (event) => {
-    console.log(event.target.value);
+    // console.log(event.target.value);
+    setSearchTerm(event.target.value);
   }
 
   return (
     <div>
       <label htmlFor="search">Search: </label>
       <input id="search" type="text" onChange={handleChange} />
+
+      <p>searching for <strong>{searchTerm}</strong></p>
     </div>
+
   );
 }
 
